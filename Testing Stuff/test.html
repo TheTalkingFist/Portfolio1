@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Text Shadow</title>
+    <style>
+        body {
+            background-color: darkolivegreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            font-size: 4rem;
+            font-family: mainFont;
+            text-align: center;
+        }
+
+        .text {
+            display: inline-flex;
+        }
+
+        .text span {
+            position: relative;
+            display: inline-block;
+            --shadow-x: 0px; /* Default shadow */
+            text-shadow: var(--shadow-x) 5px 2px rgba(0, 0, 0, 0.5);
+            transition: text-shadow 0.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="title" id="title">
+        Hello There!
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
