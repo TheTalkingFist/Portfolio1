@@ -165,6 +165,18 @@ hr {
     margin: 0 auto;
 }
 
+.footer {
+    background-color: #00033D;
+    font-family: subtitleFont;
+    font-size: 10px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
 @keyframes appear{
     0%{
         opacity: 0;
