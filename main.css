@@ -8,6 +8,11 @@
     src: url(Font/fonnts.com-Area_Normal_Thin.otf);
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 
 .title {
     font-size: 2em;
@@ -21,7 +26,7 @@
 }
 
 
-#header {
+.header {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -190,38 +195,28 @@ hr {
 
 /*My Games.html*/
 
-.game-gallery {
-    width: 90%;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #977DFF;
-    border-radius: 10px;
-}
+
 
 .game-item {
     margin: 10px auto;
     padding: 20px;
     background-color: #F5F3E7;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .game-thumbnail {
-    width: 300px;
-    height: 170px;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
+    color: 033D;
+    padding: 2px;
+    border: solid 2px #00033D;
 }
 
 .game-title {
-    font-size: 2em;
+    max-width: 250px;
+    font-size: 1.1em;
     color: #00033D;
     margin-bottom: 10px;
     text-align: center;
